@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habla y Gana | Curso Gratuito de Comunicación</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Oswald (Títulos) e Inter (Cuerpo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#f0c44c',
+                            dark: '#000000',
+                            card: '#111111',
+                            light: '#f9fafb',
+                            gray: '#1a1a1a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        h1, h2, h3, .font-heading {
+            font-family: 'Oswald', sans-serif;
+        }
+        .btn-primary {
+            background-color: #f0c44c;
+            color: #000000;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #dcb13d;
+            transform: translateY(-2px);
+        }
+        .btn-dark {
+            background-color: #000000;
+            color: #ffffff;
+            transition: all 0.2s ease-in-out;
+            border: 1px solid #333;
+        }
+        .btn-dark:hover {
+            background-color: #111111;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased selection:bg-brand-yellow selection:text-black">
+
+    <!-- SECCIÓN 1: HERO (FONDO PLANO) -->
+    <section class="relative pt-12 md:pt-20 pb-16 md:pb-28 px-4 flex flex-col items-center text-center bg-brand-dark">
+        <div class="max-w-4xl mx-auto">
+            <div class="inline-block border border-brand-yellow text-brand-yellow font-bold tracking-[0.2em] uppercase text-[10px] px-4 py-1.5 mb-6 md:mb-8 rounded-sm">
+                Entrenamiento Gratuito en Vivo
+            </div>
+
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-black uppercase leading-[1.1] md:leading-[1] tracking-tight mb-6 md:mb-8">
+                Si no sabes comunicarte con poder... <br class="hidden md:block">
+                <span class="text-brand-yellow">estás perdiendo dinero todos los días.</span>
+            </h1>
+
+            <p class="text-gray-400 text-base md:text-xl max-w-3xl mx-auto mb-10 md:mb-12 leading-relaxed">
+                Descubre cómo transformar tu forma de hablar en oportunidades, influencia y dinero — <span class="italic text-white">incluso si hoy sientes que no te toman en serio.</span>
+            </p>
+
+            <!-- Video Player -->
+            <div class="relative w-full max-w-4xl mx-auto aspect-video bg-neutral-900 border border-neutral-800 rounded-sm overflow-hidden shadow-2xl mb-10 md:mb-12 group">
+                <video 
+                    controls 
+                    class="w-full h-full object-cover"
+                    poster="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2000"
+                >
+                    <source src="video-presentacion.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+
+            <a href="https://chat.whatsapp.com/ImlnkPsG9dhEdh7iFJkOi5" class="btn-primary inline-block w-full md:w-auto text-center font-heading font-bold uppercase text-base md:text-lg tracking-wider md:tracking-widest px-6 py-4 md:px-10 md:py-5 rounded-sm">
+                QUIERO APRENDER A GENERAR DINERO
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: QUÉ VAS A APRENDER -->
+    <section class="bg-white text-brand-dark py-16 md:py-24 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-10 md:mb-16 border-l-4 md:border-l-8 border-brand-yellow pl-4 md:pl-6">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-none tracking-tight">
+                    Qué vas a <span class="text-brand-yellow">aprender</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Módulo 1 -->
+                <div class="bg-brand-gray text-white p-6 md:p-10 border-b-4 border-brand-yellow shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="text-brand-yellow font-heading font-black text-5xl md:text-6xl mb-4 md:mb-6 opacity-30">01</div>
+                    <h3 class="text-xl md:text-2xl font-bold uppercase mb-3 md:mb-4 leading-tight">Mentalidad de comunicación rentable</h3>
+                    <ul class="text-gray-400 text-sm space-y-3">
+                        <li class="flex items-start"><i class="ph ph-caret-right mt-1 mr-2 text-brand-yellow"></i> Cómo eliminar el miedo a que te juzguen.</li>
+                        <li class="flex items-start"><i class="ph ph-caret-right mt-1 mr-2 text-brand-yellow"></i> Cómo hablar con seguridad sin que se sienta forzado.</li>
+                    </ul>
+                </div>
+
+                <!-- Módulo 2 -->
+                <div class="bg-brand-gray text-white p-6 md:p-10 border-b-4 border-brand-yellow shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="text-brand-yellow font-heading font-black text-5xl md:text-6xl mb-4 md:mb-6 opacity-30">02</div>
+                    <h3 class="text-xl md:text-2xl font-bold uppercase mb-3 md:mb-4 leading-tight">Cómo hablar para generar oportunidades</h3>
+                    <ul class="text-gray-400 text-sm space-y-3">
+                        <li class="flex items-start"><i class="ph ph-caret-right mt-1 mr-2 text-brand-yellow"></i> Qué decir en momentos clave.</li>
+                        <li class="flex items-start"><i class="ph ph-caret-right mt-1 mr-2 text-brand-yellow"></i> Cómo estructurar tu mensaje para impactar.</li>
+                    </ul>
+                </div>
+
+                <!-- Módulo 3 -->
+                <div class="bg-brand-gray text-white p-6 md:p-10 border-b-4 border-brand-yellow shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="text-brand-yellow font-heading font-black text-5xl md:text-6xl mb-4 md:mb-6 opacity-30">03</div>
+                    <h3 class="text-xl md:text-2xl font-bold uppercase mb-3 md:mb-4 leading-tight">Comunicación que se convierte en dinero</h3>
+                    <ul class="text-gray-400 text-sm space-y-3">
+                        <li class="flex items-start"><i class="ph ph-caret-right mt-1 mr-2 text-brand-yellow"></i> Cómo posicionarte al hablar.</li>
+                        <li class="flex items-start"><i class="ph ph-caret-right mt-1 mr-2 text-brand-yellow"></i> Cómo atraer oportunidades sin perseguirlas.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: IDENTIFICACIÓN -->
+    <section class="bg-brand-light text-brand-dark py-16 md:py-24 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-10 md:mb-16 text-center">
+                <p class="text-brand-yellow font-bold tracking-widest uppercase text-xs md:text-sm mb-2 font-heading">¿Es para ti?</p>
+                <h2 class="text-3xl md:text-5xl lg:text-6xl font-black uppercase leading-none tracking-tight">
+                    ESTE ENTRENAMIENTO <br class="hidden sm:block"><span class="text-brand-yellow">ES PARA TI SI...</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <!-- Tarjetas -->
+                <div class="bg-white p-6 md:p-10 border border-gray-200 text-center hover:border-brand-yellow transition-colors duration-300">
+                    <div class="w-10 h-10 bg-brand-yellow text-white rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                        <i class="ph ph-check font-bold"></i>
+                    </div>
+                    <p class="text-gray-800 text-sm md:text-base font-semibold leading-relaxed">Sabes que tienes potencial, pero no sabes cómo expresarlo con seguridad.</p>
+                </div>
+                <div class="bg-white p-6 md:p-10 border border-gray-200 text-center hover:border-brand-yellow transition-colors duration-300">
+                    <div class="w-10 h-10 bg-brand-yellow text-white rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                        <i class="ph ph-check font-bold"></i>
+                    </div>
+                    <p class="text-gray-800 text-sm md:text-base font-semibold leading-relaxed">Te cuesta hablar en momentos importantes (reuniones, ventas, entrevistas).</p>
+                </div>
+                <div class="bg-white p-6 md:p-10 border border-gray-200 text-center hover:border-brand-yellow transition-colors duration-300">
+                    <div class="w-10 h-10 bg-brand-yellow text-white rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                        <i class="ph ph-check font-bold"></i>
+                    </div>
+                    <p class="text-gray-800 text-sm md:text-base font-semibold leading-relaxed">Sientes que otros avanzan más rápido solo porque comunican mejor.</p>
+                </div>
+                <div class="bg-white p-6 md:p-10 border border-gray-200 text-center hover:border-brand-yellow transition-colors duration-300">
+                    <div class="w-10 h-10 bg-brand-yellow text-white rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                        <i class="ph ph-check font-bold"></i>
+                    </div>
+                    <p class="text-gray-800 text-sm md:text-base font-semibold leading-relaxed">No sabes cómo venderte sin sentir incomodidad.</p>
+                </div>
+                <div class="bg-white p-6 md:p-10 border border-gray-200 text-center hover:border-brand-yellow transition-colors duration-300">
+                    <div class="w-10 h-10 bg-brand-yellow text-white rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                        <i class="ph ph-check font-bold"></i>
+                    </div>
+                    <p class="text-gray-800 text-sm md:text-base font-semibold leading-relaxed">Has perdido oportunidades valiosas por no saber qué decir.</p>
+                </div>
+                <div class="bg-white p-6 md:p-10 border border-gray-200 text-center hover:border-brand-yellow transition-colors duration-300">
+                    <div class="w-10 h-10 bg-brand-yellow text-white rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                        <i class="ph ph-check font-bold"></i>
+                    </div>
+                    <p class="text-gray-800 text-sm md:text-base font-semibold leading-relaxed">Sabes que podrías ganar más dinero… pero algo te frena.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 md:mt-20 text-center w-full" id="registro">
+                <a href="https://chat.whatsapp.com/ImlnkPsG9dhEdh7iFJkOi5" class="btn-primary inline-block w-full md:w-auto text-center font-heading font-bold uppercase text-base md:text-xl tracking-wider md:tracking-[0.15em] px-6 py-4 md:px-14 md:py-6 rounded-sm">
+                    RESERVA TU CUPO GRATIS AHORA
+                </a>
+                <p class="text-gray-400 text-[10px] md:text-xs mt-4 md:mt-6 tracking-widest uppercase font-bold">Sesión exclusiva por Zoom | Cupos Limitados</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 7: AUTORIDAD -->
+    <section class="py-16 md:py-24 px-4 bg-brand-dark">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+            <div class="w-full md:w-5/12">
+                <div class="relative w-5/6 mx-auto md:w-full">
+                    <div class="absolute inset-0 border border-brand-yellow translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3"></div>
+                    <img src="foto para landing.jpg" alt="[Imagen de Tatiana Guerrero tomando café]" class="relative z-10 w-full grayscale transition-all duration-500 hover:grayscale-0">
+                </div>
+            </div>
+            <div class="w-full md:w-7/12 text-center md:text-left mt-6 md:mt-0">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-black uppercase leading-tight mb-6 md:mb-8">
+                    Soy <span class="text-brand-yellow">Tatiana Guerrero</span>,<br>
+                    asesora en comunicación.
+                </h2>
+                <div class="space-y-4 md:space-y-6 text-gray-400 text-base md:text-lg leading-relaxed">
+                    <p>He trabajado con personas que necesitaban destacar en momentos clave: entrevistas, presentaciones y eventos de alto impacto.</p>
+                    <p class="font-heading text-xl md:text-2xl text-white italic border-l-4 border-brand-yellow pl-4 md:pl-6 py-2 text-left">
+                        "No es el talento lo que cambia tu vida… es cómo lo comunicas."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN FINAL: URGENCIA -->
+    <section class="py-16 md:py-24 px-4 bg-brand-yellow text-black text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-6xl font-black font-heading uppercase leading-[1.1] mb-6 md:mb-8">
+                Este entrenamiento no es para todo el mundo.
+            </h2>
+            <p class="text-lg md:text-2xl font-medium mb-10 md:mb-12 opacity-80">
+                Es para personas que saben que pueden dar más... <br class="hidden sm:block">
+                y están listas para <span class="font-bold underline decoration-2">dejar de esconderse.</span>
+            </p>
+            <a href="https://chat.whatsapp.com/ImlnkPsG9dhEdh7iFJkOi5" class="btn-dark inline-block w-full md:w-auto text-center font-heading font-bold uppercase text-lg md:text-2xl tracking-widest px-6 py-5 md:px-14 md:py-7 rounded-sm">
+                ACCEDER AHORA SIN COSTO
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 text-center text-gray-600 text-[10px] tracking-[0.3em] uppercase border-t border-neutral-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="text-gray-400 mb-2">Habla y Gana | Tatiana Guerrero</p>
+            <p>&copy; 2026 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
